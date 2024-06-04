@@ -14,7 +14,7 @@
     <div class="duration-options">
         <select [(ngModel)]="duration">
             <option value="" disabled selected>Select duration</option>
-            <option *ngFor="let hour of hours" [value]="hour">{{ hour }} hours</option>
+            <option class="options" *ngFor="let hour of hours" [value]="hour">{{ hour }} hours</option>
         </select>
     </div>
 
