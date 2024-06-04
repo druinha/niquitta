@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class PriceSelectionComponent {
   selectedPackage: string = '';
   duration: number | null = null;
-  houseRate = 5 / 60; // DKK per minute, converted to per hour
+  houseRate = 300; // DKK per hour
   principalRate = 400; // DKK per hour
   urgentRate = 500; // DKK per hour
   companyRate = 450; // DKK per hour
@@ -20,7 +20,7 @@ export class PriceSelectionComponent {
     if (this.selectedPackage && this.duration) {
       switch (this.selectedPackage) {
         case 'houses':
-          this.totalPrice = this.houseRate * this.duration * 60; // Convert back to per minute rate
+          this.totalPrice = this.houseRate * this.duration;
           break;
         case 'principal':
           this.totalPrice = this.principalRate * this.duration;
@@ -32,11 +32,11 @@ export class PriceSelectionComponent {
           this.totalPrice = this.companyRate * this.duration;
           break;
         default:
-          this.totalPrice = 0; // Reset total price if package type is invalid
+          this.totalPrice = 0;
           break;
       }
     } else {
-      this.totalPrice = 0; // Reset total price if package or duration is not selected
+      this.totalPrice = 0;
     }
   }
 }
