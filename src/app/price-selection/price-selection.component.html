@@ -1,0 +1,26 @@
+<div class="package-selection">
+    <h2>Select your cleaning type:</h2>
+    <div class="package-options">
+        <select [(ngModel)]="selectedPackage">
+            <option value="" disabled selected>Select your cleaning type</option>
+            <option value="houses">Houses</option>
+            <option value="principal">Principal</option>
+            <option value="urgent">Urgent</option>
+            <option value="company">Company</option>
+        </select>
+    </div>
+
+    <h2>Select Duration:</h2>
+    <div class="duration-options">
+        <select [(ngModel)]="duration">
+            <option value="" disabled selected>Select duration</option>
+            <option *ngFor="let hour of hours" [value]="hour">{{ hour }} hours</option>
+        </select>
+    </div>
+
+    <button class="button" (click)="calculatePrice()">Calculate Price</button>
+
+    <div [ngClass]="{'price': true, 'price-calculated': totalPrice > 0}" *ngIf="totalPrice !== null">
+        Total Price: {{ totalPrice }} DKK
+    </div>
+</div>

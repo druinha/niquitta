@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.package-selection {
+  text-align: center;
+  background-color: #ccc;
+}
+
+.package-selection h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.package-options,
+.duration-options {
+  margin-bottom: 1rem;
+}
+
+.package-options select,
+.duration-options select {
+  width: 50%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+}
+
+.button {
+  margin-top: 1rem;
+  background: blue;
+  border: 1px solid blue;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button:hover,
+.button:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: blue;
+}
+
+.button:active {
+  transform: translateY(3px);
+}
+
+.price {
+  margin-top: 2rem;
+}
+
+.price-calculated {
+  color: green;
+  font-weight: 700;
+}

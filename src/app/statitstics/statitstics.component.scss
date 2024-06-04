@@ -1,0 +1,19 @@
+.statistics {
+  display: flex;
+  justify-content: space-around;
+}
+
+.statistic {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.number {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 18px;
+}
