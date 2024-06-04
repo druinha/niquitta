@@ -190,6 +190,9 @@
 }
 
 @media (max-width: 480px) {
+  h3 {
+    font-size: 1.25rem !important;
+  }
   .left,
   .right {
     padding: 5px;
