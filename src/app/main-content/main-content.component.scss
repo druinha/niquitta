@@ -135,7 +135,7 @@
   }
 
   .calculator {
-    background-color: #ccc;
+    background-color: #9041da;
     margin: 0;
     padding: 2rem;
   }
@@ -168,9 +168,13 @@
         .icon {
           width: 50px; /* Adjust icon width */
           height: 50px; /* Adjust icon height */
-          background-color: #007bff; /* Blue background */
           border-radius: 50%; /* Rounded shape */
           margin-bottom: 1rem;
+
+          img {
+            width: 50px;
+            height: 50px;
+          }
         }
 
         .text {
