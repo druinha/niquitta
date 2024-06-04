@@ -1,10 +1,11 @@
 * {
   margin: 0;
   padding: 0;
+  background-color: #6dacf5;
 }
 .package-selection {
   text-align: center;
-  background-color: #ccc;
+  background-color: #6dacf5;
 }
 
 .package-selection h2 {
@@ -21,10 +22,10 @@
 .duration-options select {
   width: auto;
   max-width: 300px;
-  border: 1px solid #ccc;
+  border: 1px solid #6dacf5;
   border-radius: 0.25rem;
   font-size: 1rem;
-  background-color: #f9f9f9;
+  background-color: #6dacf5;
 }
 
 .button {
